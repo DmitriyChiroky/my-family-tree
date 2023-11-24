@@ -1,0 +1,74 @@
+.wcl-section-1 {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: $c-white;
+
+    .data {
+        &-container {
+            padding: 0 40px;
+            max-width: unset;
+        }
+
+        &-row {
+            display: flex;
+            height: 80px;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 20px;
+        }
+
+        &-title {
+            color: #64845F;
+            font-family: $f-comfortaa;
+            font-size: 21px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &-name {
+            color: #575339;
+            text-align: right;
+            font-family: $f-comfortaa;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        &-img-2 {
+            max-width: 692px;
+            margin: 0 auto;
+        }
+    }
+
+
+    @media (max-width: 1200px) {
+        .data {
+            &-img {
+                max-width: 600px;
+            }
+
+            &-img-2 {
+                max-width: 500px;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .data {
+            &-container {
+                padding: 0 18px;
+            }
+
+            &-row {
+                height: 56px;
+            }
+
+            &-name {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}

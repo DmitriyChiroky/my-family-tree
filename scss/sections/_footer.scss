@@ -1,0 +1,55 @@
+.wcl-footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: $c-white;
+
+    .wcl-b1-version {
+        position: static;
+    }
+
+    .data {
+        &-container {
+            padding: 0 40px;
+            max-width: unset;
+        }
+
+        &-row {
+            display: flex;
+            height: 50px;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 20px;
+            row-gap: 11px;
+        }
+
+        &-copyright {
+            color: #575339;
+            font-family: $f-roboto;
+            font-size: 12px;
+            font-weight: 300;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .wcl-b1-version {
+          font-size: 9px;
+        }
+    
+        .data {
+            &-container {
+                padding: 0 20px;
+            }
+
+            &-row {
+                height: 29px;
+            }
+
+            &-copyright {
+                font-size: 9px;
+            }
+        }
+    }
+}

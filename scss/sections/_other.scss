@@ -1,0 +1,92 @@
+.wcl-b1-version {
+    position: absolute;
+    color: #575339;
+    font-family: $f-comfortaa;
+    font-size: 12px;
+    font-weight: 300;
+    top: 22px;
+    right: 360px;
+
+    @media (max-width: 1400px) {
+        right: 60px;
+    }
+
+    @media (max-width: 767px) {
+        font-size: 10px;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+.wcl-b2-img-loader {
+    label {
+        width: 167px;
+        height: 167px;
+        border-radius: 10px;
+        background: #F1F1F1;
+        flex-shrink: 0;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 15px;
+        overflow: hidden;
+
+        svg {
+            width: 26px;
+            height: 23px;
+        }
+
+        img[src^="data"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        left: 50%;
+        top: 100%;
+        width: 1px;
+        height: 1px;
+    }
+
+    .b2 {
+        &-text {
+            color: #64845F;
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 1025px){
+        label{
+            max-width: 335px;
+            width: 100%;
+            height: 259px;
+        }
+    }
+  
+
+    @media (max-width: 575px) {
+        .mod-label {
+            margin-bottom: 10px;
+        }
+
+        .data {
+            label {
+                width: 100%;
+                max-width: 335px;
+                height: 259px;
+            }
+        }
+    }
+}

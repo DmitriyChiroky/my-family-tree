@@ -1,0 +1,629 @@
+.wcl-section-2 {
+    background: #F5F5F5;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.10) inset;
+    height: 1190px;
+    overflow: hidden;
+    position: relative;
+    height: calc(100vh - (80px + 50px));
+    margin-top: 80px;
+
+    .data {
+        &-add-new {
+            padding: 58px 20px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            height: 147px;
+
+            &.mod-level-1 {
+                top: 200px;
+            }
+
+            &.mod-level-2 {
+                top: 440px;
+            }
+
+            &.mod-level-3 {
+                top: 730px;
+            }
+
+            &.mod-level-4 {
+                display: none;
+            }
+
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 1000vw;
+                margin-left: -500vw;
+                height: 1px;
+                background-color: #CECECE;
+            }
+
+            &::after {
+                bottom: 0;
+            }
+
+            &::before {
+                top: 0;
+            }
+
+            &-text {
+                color: #64845F;
+                text-align: center;
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+            img {
+                width: 30px;
+                margin-left: 18px;
+            }
+        }
+
+        &-nav {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            z-index: 100;
+
+            &-item {
+                margin-bottom: 9px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &-btn {
+                width: 32px;
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $c-white;
+                cursor: pointer;
+
+                img {
+                    max-width: 65%;
+                }
+
+                flex-shrink: 0;
+                filter: drop-shadow(0px 3px 25px rgba(0, 0, 0, 0.07));
+            }
+
+            &-line {
+                width: 24px;
+                height: 1px;
+                background-color: #E5E5E5;
+                margin: 0 auto;
+            }
+        }
+
+        &-inner {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            top: -90px;
+
+            //    height: 1000px;
+
+            &-el {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 100%;
+                height: 100%;
+                transform: translate(-50%, -50%) scale(20);
+            }
+        }
+
+        &-item {
+            position: absolute;
+
+            &.mod-l-mama {
+                top: 0;
+                right: 50%;
+                margin-right: 50px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 50px;
+                    height: 248px;
+                    background-image: url('../img/mod-l-mama.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    right: 100%;
+                    margin-right: 10px;
+                    top: 50%;
+                }
+            }
+
+            // lvl 2
+
+            &.mod-l-babusya {
+                top: 248px;
+                right: 50%;
+                margin-right: 120px;
+                transform: translateX(-100%);
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 430px;
+                    height: 250px;
+                    background-image: url('../img/mod-l-babusya.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    top: 50%;
+                    margin-right: 10px;
+                    right: 100%;
+                }
+            }
+
+            &.mod-l-didus {
+                top: 248px;
+                right: 50%;
+                margin-right: 50px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 201px;
+                    height: 164px;
+                    background-image: url('../img/mod-l-didus.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    top: 100%;
+                    margin-top: 10px;
+                    right: 50%;
+                    margin-right: 0;
+                }
+            }
+
+            // lvl 3
+
+            &.mod-l-3-1-prababusya {
+                top: 494px;
+                right: 50%;
+                margin-right: 120px;
+                transform: translateX(-100%);
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 201px;
+                    height: 384px;
+                    background-image: url('../img/mod-l-3-1-prababusya.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin-top: 9px;
+                    margin-left: -98px;
+                }
+            }
+
+            &.mod-l-3-1-pradidus {
+                top: 494px;
+                right: 50%;
+                margin-right: 50px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 201px;
+                    height: 164px;
+                    background-image: url('../img/mod-l-didus.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    top: 100%;
+                    margin-top: 10px;
+                    right: 50%;
+                    margin-right: 0;
+                }
+            }
+
+            &.mod-l-3-2-prababusya {
+                top: 494px;
+                right: 50%;
+                transform: translateX(-300%);
+                margin-right: 290px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 201px;
+                    height: 384px;
+                    background-image: url('../img/mod-l-3-1-prababusya.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin-top: 9px;
+                    margin-left: -98px;
+                }
+            }
+
+            &.mod-l-3-2-pradidus {
+                top: 494px;
+                right: 50%;
+                transform: translateX(-200%);
+                margin-right: 220px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 201px;
+                    height: 164px;
+                    background-image: url('../img/mod-l-didus.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    top: 100%;
+                    margin-top: 10px;
+                    right: 50%;
+                    margin-right: 0;
+                }
+            }
+
+            // lvl 4
+
+            &.mod-l-4-1-prababusya {
+                top: 739px;
+                right: 50%;
+                margin-right: 120px;
+                transform: translateX(-100%);
+            }
+
+            &.mod-l-4-1-pradidus {
+                top: 739px;
+                right: 50%;
+                margin-right: 50px;
+            }
+
+            &.mod-l-4-2-prababusya {
+                top: 957px;
+                right: 50%;
+                margin-right: 189px;
+                transform: translateX(-200%);
+            }
+
+            &.mod-l-4-2-pradidus {
+                top: 957px;
+                right: 50%;
+                margin-right: 120px;
+                transform: translateX(-100%);
+            }
+
+            &.mod-l-4-3-prababusya {
+                top: 739px;
+                right: 50%;
+                transform: translateX(-300%);
+                margin-right: 290px;
+            }
+
+            &.mod-l-4-3-pradidus {
+                top: 739px;
+                right: 50%;
+                transform: translateX(-200%);
+                margin-right: 220px;
+            }
+
+            &.mod-l-4-4-prababusya {
+                top: 957px;
+                right: 50%;
+                margin-right: 1478px;
+            }
+
+            &.mod-l-4-4-pradidus {
+                top: 957px;
+                right: 50%;
+                margin-right: 1130px;
+            }
+
+
+            // tato
+
+
+            &.mod-r-tato {
+                top: 0;
+                left: 50%;
+                margin-left: 50px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 50px;
+                    height: 248px;
+                    background-image: url('../img/mod-l-mama.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    left: 100%;
+                    margin-left: 10px;
+                    top: 50%;
+                    transform: scaleX(-1);
+                }
+            }
+
+            // lvl 2
+
+            &.mod-r-babusya {
+                top: 248px;
+                left: 50%;
+                margin-left: 120px;
+                transform: translateX(100%);
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 430px;
+                    height: 250px;
+                    background-image: url('../img/mod-l-babusya.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    top: 50%;
+                    margin-left: 10px;
+                    left: 100%;
+                    transform: scaleX(-1);
+                }
+            }
+
+            &.mod-r-didus {
+                top: 248px;
+                left: 50%;
+                margin-left: 50px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 201px;
+                    height: 164px;
+                    background-image: url('../img/mod-l-didus.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    top: 100%;
+                    margin-top: 10px;
+                    left: 50%;
+                    margin-left: 0;
+                    transform: scaleX(-1);
+                }
+            }
+
+
+            // lvl 3
+
+            &.mod-r-3-1-prababusya {
+                top: 494px;
+                left: 50%;
+                margin-left: 120px;
+                transform: translateX(100%);
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 201px;
+                    height: 384px;
+                    background-image: url('../img/mod-l-3-1-prababusya.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    left: 50%;
+                    transform: translateX(50%) scaleX(-1);
+                    margin-top: 9px;
+                    margin-left: -98px;
+                }
+            }
+
+            &.mod-r-3-1-pradidus {
+                top: 494px;
+                left: 50%;
+                margin-left: 50px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 201px;
+                    height: 164px;
+                    background-image: url('../img/mod-l-didus.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    top: 100%;
+                    margin-top: 10px;
+                    left: 50%;
+                    margin-left: 0;
+                    transform: scaleX(-1);
+                }
+            }
+
+            &.mod-r-3-2-prababusya {
+                top: 494px;
+                left: 50%;
+                transform: translateX(300%);
+                margin-left: 290px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 201px;
+                    height: 384px;
+                    background-image: url('../img/mod-l-3-1-prababusya.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    left: 50%;
+                    transform: translateX(50%) scaleX(-1);
+                    margin-top: 9px;
+                    margin-left: -98px;
+                }
+            }
+
+            &.mod-r-3-2-pradidus {
+                top: 494px;
+                left: 50%;
+                transform: translateX(200%);
+                margin-left: 220px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 201px;
+                    height: 164px;
+                    background-image: url('../img/mod-l-didus.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    top: 100%;
+                    margin-top: 10px;
+                    left: 50%;
+                    margin-left: 0;
+                    transform: scaleX(-1);
+                }
+            }
+
+
+            // lvl 4
+
+
+            &.mod-r-4-1-prababusya {
+                top: 739px;
+                left: 50%;
+                margin-left: 120px;
+                transform: translateX(100%);
+            }
+
+            &.mod-r-4-1-pradidus {
+                top: 739px;
+                left: 50%;
+                margin-left: 50px;
+            }
+
+            &.mod-r-4-2-prababusya {
+                top: 957px;
+                left: 50%;
+                margin-left: 189px;
+                transform: translateX(200%);
+            }
+
+            &.mod-r-4-2-pradidus {
+                top: 957px;
+                left: 50%;
+                margin-left: 120px;
+                transform: translateX(100%);
+            }
+
+            &.mod-r-4-3-prababusya {
+                top: 739px;
+                left: 50%;
+                transform: translateX(300%);
+                margin-left: 290px;
+            }
+
+            &.mod-r-4-3-pradidus {
+                top: 739px;
+                left: 50%;
+                transform: translateX(200%);
+                margin-left: 220px;
+            }
+
+            &.mod-r-4-4-prababusya {
+                top: 957px;
+                left: 50%;
+                margin-left: 1478px;
+            }
+
+            &.mod-r-4-4-pradidus {
+                top: 957px;
+                left: 50%;
+                margin-left: 1130px;
+            }
+        }
+
+        &-level {
+            display: none;
+
+            .data-item {
+                &::after {
+                    display: none;
+                }
+            }
+
+            &.mod-level-active {
+                display: block;
+            }
+
+            &.mod-level-line-active {
+                .data-item {
+                    &::after {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+
+        &-parent {
+            width: 280px;
+            height: 148px;
+            border-radius: 10px;
+            background: #FFF;
+            padding: 36px 23px 22px 35px;
+            transition: all 0.25s ease;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0px 3px 25px 0px rgba(0, 0, 0, 0.07);
+            }
+
+            &-type {
+                color: $c-white;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 25px;
+                min-width: 72px;
+                height: 27px;
+                text-align: center;
+                margin-bottom: 10px;
+                padding: 0px 15px;
+                position: relative;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+
+                background-image: url('../img/square.svg');
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                background-position: center;
+                text-align: center;
+            }
+
+            &-name {
+                color: #1C1C1C;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 25px;
+                max-width: 240px;
+            }
+        }
+    }
+
+
+    @media (max-width: 991px) {
+        .data {
+            &-nav {
+                top: 23px;
+                right: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        height: calc(100vh - (56px + 29px));
+        margin-top: 56px;
+    }
+}
